@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*POUR STYLISER L'EN TETE*/
+header {
+    position: fixed;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo {
+    display: block;
+}
+
+header .logo h1 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+
+header .barre {
+    display: block;
+}
+
+header .barre nav {
+    display: block;
+}
+
+header .barre nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .barre nav ul li {
+    list-style: none;
+}
+
+header .barre nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header .barre nav ul li a:hover {
+    color: #21568e;
+    font-weight: 900;
+    border-bottom: 2px solid #21568e;
+}
+
+
+/*POUR STYLISER LE CORP*/
+.presentation {
+    width: 100%;
+    height: 93vh;
+    padding: 150px 50px;
+    
+}
+
+.presentation .bloque {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.presentation .bloque .photo {
+    width: 400px;
+}
+
+.presentation .bloque .photo img {
+    width: 300px;
+    height: 500px;
+    border-radius: 3em;
+}
+
+.presentation .bloque .texte {
+    width: 400px;
+    border-bottom: 1px solid black;
+}
+
+.presentation .bloque .texte h1 {
+    font-size: 2.5em;
+    padding: 5px 0;
+}
+
+.presentation .bloque .texte h2 {
+    color: #21568e;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px 0;
+}
+
+
+
+/*POUR STYLISE PIED*/
+footer {
+    width: 100%;
+    padding: 20px 40px;
+    background: #92acc8;
+    text-align: center;
+}
+
+footer P {
+    color: #333;
+}
+
+footer span {
+    color: #21568e;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    header {
+        padding: 20px;
+    }
+
+    header .barre nav ul li a {
+    font-size: 1em;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+
+    .presentation {
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation .bloque {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .presentation .bloque .photo {
+        width: 400px;
+        display: block;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .presentation .bloque .photo img {
+        width: 250px;
+        height: 350px;
+        border-radius: 3em;
+    }
+
+    .presentation .bloque .texte {
+        width: 400px;
+        padding: 0px 20px;
+        border-bottom: none;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    footer {
+        width: 400px;
+        padding: 20px 40px;
+        background: #92acc8;
+        text-align: center;
+    }
+}
+
